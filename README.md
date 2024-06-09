@@ -15,5 +15,6 @@ For it to work for you you need a database that looks like this:
 | 9  | IJustLearned | C#                   | #9h!g5lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCr&e^r8 | $pJf7lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFZpBIq | Ww7mcEV3 |
 | 10 | All          | users                | #lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFgHiJlMn9y | $irVfglMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbaJTOTB5 | wndGiGz5 |
 
+(for getting correct hashed data and salt, go to my other program "HashingProgram": https://github.com/PilchS/HashingProgram )
 
  When you have a database, provide your credentials in line 11 in AccountController.cs file
