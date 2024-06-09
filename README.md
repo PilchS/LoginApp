@@ -1,7 +1,7 @@
 # LoginApp
 
 LoginApp is project which goal was to prevent user to do an SQL injection. 
----
+
 I managed to do that by hashing the username and password. When user wrote their credentials, the program hashes prvided data, and then checks it with ones in the database.
 For it to work for you you need a database that looks like this:
 
