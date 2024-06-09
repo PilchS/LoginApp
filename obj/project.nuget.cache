@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "wgvfzak23Bc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tak12\\Desktop\\studia\\cyberka\\LoginApp\\LoginApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tak12\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\tak12\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\tak12\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
