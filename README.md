@@ -21,3 +21,28 @@ For it to work for you you need a database that looks like this:
 (for getting correct hashed data and salt, go to my other program "HashingProgram": https://github.com/PilchS/HashingProgram )
 
  When you have a database, provide your credentials in line 11 in AccountController.cs file
+
+---
+To get the same test data I used:
+
+
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    username_hash VARCHAR(50) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    salt VARCHAR(50) NOT NULL
+);
+
+INSERT INTO users (username, password, username_hash, password_hash, salt) VALUES
+('test','test', '#2lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFgHiJlMf2', '$efsaMlMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCkePQ7u', 'nFx5Cc7P'),
+('Ben123', 'Passwd1.' ' #!alMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFgHiJ82&', ' $XfFjD1YlMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXy8lZJSmHI', '8kMTFnUf'),
+('Carl', 'IfailedTheTask', '#3lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFgHiJlMe@', '$OnYynqvuDGlMoPqRsTvWxYzaCdEfGhJkLmNoQrcfRQz1QtbWO', 'DR13gOJi'),
+('MarthaG', 'Pupp1es', '#&elMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFgHiJ2n!', '$ycs1NflMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZFKwFFedj', 'eXMSyrgw'),
+('DarkWarior66', 'Bl0Od', '#0e#J9lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCe*b&68', ' $Q0xqPlMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbUtrcco3', 'YHweYp13'),
+('Jeff', '2Mv5kf9RZ2Kfro3sSgjL', '#&lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFgHiJlMs!', '$Xifxa9mMjXCeXlMoPqRsTvWxYzaCdEfGhJk3yFCwF1ZHLMirm', '19UTZyeR'),
+('Student', 'Passed', ' #$hlMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFgHi*r2g', '$hfbrz3lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAvBStjoH', '3mOug6bm'),
+('JS', 'React', '#lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFgHiJlMnO#', '$LnjgblMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbZxZmtbI', 'KMsMEgpV'),
+('IJustLeatned', 'C#', '#9h!g5lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCr&e^r8', '$pJf7lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFZpBIq', 'Ww7mcEV3'),
+('All', 'users', '#lMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbCeFgHiJlMn9y', ' $irVfglMoPqRsTvWxYzaCdEfGhJkLmNoQrStUvXyZAbaJTOTB5', ' wndGiGz5');
